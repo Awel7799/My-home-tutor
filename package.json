@@ -1,0 +1,20 @@
+
+{
+  "name": "my-home-tutor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true, 
+  "workspaces": [
+    "packages/*" 
+  ],
+  "scripts": {
+    "dev:web": "npm run dev --workspace=web",
+    "dev:server": "npm run dev --workspace=server",
+    "start:web": "npm run start --workspace=web",
+    "start:server": "npm run start --workspace=server",
+    "build:web": "npm run build --workspace=web",
+    "build:server": "npm run build --workspace=server",
+    "install:all": "npm install" 
+}
+}
