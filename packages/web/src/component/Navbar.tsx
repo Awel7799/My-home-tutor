@@ -6,13 +6,13 @@ export default function Navbar() {
     <nav className="flex items-center justify-between px-4 sm:px-8 py-4 shadow-md bg-white">
       {/* Logo */}
       <h1 className="text-2xl font-bold italic text-black tracking-tight">
-        ScholarMatch
+       <Link href="/">ScholarMatch</Link> 
       </h1>
 
       {/* Navigation Links */}
       <ul className="flex items-center gap-6 text-base font-medium text-gray-700">
         <li className="hover:text-blue-600 transition-colors cursor-pointer">
-          Find Tutor
+        <Link href="/searchPage">Find Tutor</Link>  
         </li>
 
         {/* Become Tutor: hidden on small screens, visible on md+ */}
