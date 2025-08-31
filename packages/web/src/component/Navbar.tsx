@@ -1,3 +1,6 @@
+"use client"; 
+
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="flex items-center justify-between px-4 sm:px-8 py-4 shadow-md bg-white">
@@ -18,9 +21,11 @@ export default function Navbar() {
         </li>
 
         <li>
-          <button className="px-4 py-2 border rounded-xl bg-blue-200 text-black hover:bg-blue-300 transition-colors shadow-sm">
-            Login / Signup
-          </button>
+          <Link href="/auth/sign-up">
+            <button className="px-4 py-2 border rounded-xl bg-blue-200 text-black hover:bg-blue-300 transition-colors shadow-sm">
+              Login / Signup
+            </button>
+          </Link>
         </li>
       </ul>
     </nav>
